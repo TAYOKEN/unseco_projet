@@ -140,7 +140,7 @@ nav ul li:hover .sous-menu {
 }
 
 .image-container img {
-  height: 100px; /* Fixe la hauteur des images */
+  height: 10px; /* Fixe la hauteur des images */
   width: auto; /* Largeur ajustée automatiquement */
   transition: transform 0.3s ease, opacity 0.3s ease; /* Animations */
   border-radius: 10px; /* Coins arrondis */
@@ -223,7 +223,12 @@ nav ul li:hover .sous-menu {
 }
 
 .description-container h1 {
-  font-size: 40px;
+  font-size: 50px;
+  color:#f7af3e
+}
+.description-container img {
+  border: 2px solid #f7af3e;
+  border-radius: 8px
 }
 
 video {
@@ -247,19 +252,31 @@ footer {
 .competence-container {
   background-color: #505050;
   padding: 20px;
+  border:10px #ea5c0d ;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  text-align: center;
+  display: flex; 
+  gap: 20px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  text-align: center; /* Centrer le contenu dans chaque bloc */
+}
+
+.competence-container .competence {
+  border:10px #ea5c0d ;
+
+  display: inline-block; /* Chaque bloc est indépendant */
+  text-align: center; /* Centrer le texte dans chaque bloc */
 }
 
 .competence-container img {
-  height: 100px;
+  border:10px #ea5c0d ;
+  height: 300px;
   width: auto;
   border-radius: 5px;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  margin-bottom: 10px; 
 }
+
 
 section {
   margin-bottom: 40px;
